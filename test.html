@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+</head>
+
+<body>
+		<div class='fst'>
+			complete
+		</div>
+		
+		<div class='scd'>
+			confirm
+		</div>
+
+</body>
+
+<style>
+
+div{
+	display:inline-block;
+	height:20%;
+	text-align:center;
+	overflow:hidden;
+	transition:2s;
+}
+.fst{
+	width:25%;
+	background:green;
+}
+.scd{
+	width:10%;
+	background:gray;
+}
+.fst:hover{
+	width:10%;
+	background:red;
+}
+.fst:hover ~.scd{
+	width:25%;
+	background:blue;
+}
+</style>
+</html>
