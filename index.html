@@ -10,7 +10,7 @@
 		<div>101</div>
 		<div>2</div>
 		<div>3</div>
-		<div>4</div>
+		<div id='dv'>4</div>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 		Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
 		pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
@@ -40,8 +40,8 @@
 	}
 	div div:nth-child(1){width:100px;}
 	div div:nth-child(2){width:200px;}
-	div div:nth-child(3){width:3000px;}
-	div div:nth-child(4){width:400px;}
+	div div:nth-child(3){width:300px;}
+	div div:nth-child(4){width:360px;}
 	
 	
 	@media screen and (min-width:360px){
@@ -60,5 +60,7 @@
 		div div{background:yellow;}
 	}
 </style>
-
+<script>
+	var a=document.querySelector('#dv').innerHTML=document.documentElement.clientHeight
+</script>
 </html>
