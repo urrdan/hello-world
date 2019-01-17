@@ -7,12 +7,10 @@
 
 <body>
 	<div>
-		<div>100</div>
-		<div>500</div>
-		<div>1000</div>
-		<div>1100</div>
-		<div>1280</div>
-		<div>2960</div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
 		Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
 		pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
@@ -44,21 +42,19 @@
 	div div:nth-child(2){width:200px;}
 	div div:nth-child(3){width:3000px;}
 	div div:nth-child(4){width:400px;}
-	div div:nth-child(5){width:500px;}
-	div div:nth-child(6){width:1000px;}
 	
 	
-	@media screen and (min-width:200px){
+	@media screen and (min-width:300px){
+		div div:nth-child(1){background:red;}
+	}
+	@media screen and (min-width:330px){
 		div div:nth-child(2){background:red;}
 	}
-	@media screen and (min-width:300px){
+	@media screen and (min-width:360px){
 		div div:nth-child(3){background:red;}
 	}
-	@media screen and (min-width:400px){
+	@media screen and (min-width:390px){
 		div div:nth-child(4){background:red;}
-	}
-	@media screen and (min-width:500px){
-		div div:nth-child(5){background:red;}
 	}
 	@media screen and (orientation: landscape){
 		div div{background:yellow;}
